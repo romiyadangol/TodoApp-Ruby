@@ -20,7 +20,7 @@ A simple command-line Todo application built with Ruby. This application allows 
 
    ```bash
    git clone https://github.com/romiyadangol/TodoApp-Ruby.git
-   cd todo-app
+   cd TodoApp-Ruby
 
 
 2. Run the application:
