@@ -18,10 +18,11 @@ Getting Started
 
 1. Clone the repository:
 
-    git clone https://github.com/romiyadangol/todo-app.git
+    git clone https://github.com/romiyadangol/todoApp-Ruby.git
+   
     cd todo-app
 
-2. Run the application:
+3. Run the application:
 
     ruby todo_app.rb
 
