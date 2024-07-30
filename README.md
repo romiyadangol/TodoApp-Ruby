@@ -1,8 +1,8 @@
-Todo App
+# Todo App
 
 A simple command-line Todo application built with Ruby. This application allows you to add, list, search, update, and delete tasks.
 
-Features
+## Features
 
 - Add new tasks
 - List all tasks
@@ -10,22 +10,23 @@ Features
 - Update a task by ID
 - Delete a task by ID
 
-Prerequisites
+## Requirements
 
-- Ruby installed on your machine
+- Ruby 2.5.0 or higher
 
-Getting Started
+## Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
 
-    git clone https://github.com/romiyadangol/todoApp-Ruby.git
-   
-    cd todo-app
+   ```bash
+   git clone https://github.com/your-username/todo-app.git
+   cd todo-app
 
-3. Run the application:
 
+2. Run the application:
+```bash
     ruby todo_app.rb
-
+```
 Usage
 
 When you run the application, you will see a menu with the following options:
