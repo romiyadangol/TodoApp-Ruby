@@ -16,7 +16,18 @@ class Todo
         @todos.find { |todo|
             todo[:id] == id
         }
+    end
 
+    def update_todo(id, new_task)
+        todo = search_todo(id)
+        todo[:task] = new_task[:task]
+        todo[:isCompleted] = new_task[:isCompleted]
+    end
+
+    def delete_todo(id)
+        @todos.delete_if{ |todo|
+        todo[:id] == id
+    }
     end
 end
 
@@ -37,6 +48,9 @@ loop do
     puts "1. Add Todo List"
     puts "2. List Todo"
     puts "3. Search Todo"
+    puts "4. Update Todo"
+    puts "5. Delete Todo"
+    puts "Exit"
 
     puts "Enter your choice: "
     choice = gets.chomp.to_i
@@ -57,7 +71,23 @@ loop do
             puts "Enter id to search: "
             id = gets.chomp.to_i
             puts todo_app.search_todo(id)
+
+        when 4
+            puts "Enter id to be updated: "
+            id = gets.chomp.to_i
+            puts "Enter new task: "
+            task = gets.chomp
+            puts "isCompleted?"
+            isCompleted = gets.chomp
+            todo_app.update_todo(id, {task: task, isCompleted: isCompleted})
+
+        
+        when 5
+            puts "Enter id to be deleted: "
+            id = gets.chomp.to_i
+            puts todo_app.delete_todo(id)
         else
             puts "Invalid choice"
     end
+    puts "=========================";
 end
