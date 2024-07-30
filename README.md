@@ -19,13 +19,13 @@ A simple command-line Todo application built with Ruby. This application allows 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/romiyadangol/TodoApp-Ruby.git
    cd todo-app
 
 
 2. Run the application:
 ```bash
-    ruby todo_app.rb
+    ruby TodoApp-Ruby.rb
 ```
 Usage
 
