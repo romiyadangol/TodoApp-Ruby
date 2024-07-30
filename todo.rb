@@ -11,6 +11,13 @@ class Todo
     def list_todo
         @todos
     end
+
+    def search_todo(id)
+        @todos.find { |todo|
+            todo[:id] == id
+        }
+
+    end
 end
 
 # hash
@@ -29,6 +36,7 @@ loop do
     puts "Todo- App"
     puts "1. Add Todo List"
     puts "2. List Todo"
+    puts "3. Search Todo"
 
     puts "Enter your choice: "
     choice = gets.chomp.to_i
@@ -44,6 +52,11 @@ loop do
             })
         when 2
             puts todo_app.list_todo
+
+        when 3
+            puts "Enter id to search: "
+            id = gets.chomp.to_i
+            puts todo_app.search_todo(id)
         else
             puts "Invalid choice"
     end
